@@ -8,7 +8,7 @@ public class DESEncrypt {
     public static void main(String args[]) {
         String encodeStringBegin = "Sunny Day"; // 要加密的明文
         String encodeStringEnd = null; // 加密后的密文
-        String decodeString = null; // 密文加密后得到明文
+        String decodeString = null; // 密文解密后得到明文
         String cipherType = "DESede"; // 加密算法类型，可设置为 DES、DESede、AES 等字符串
         int keyLength = 112;
         try {
