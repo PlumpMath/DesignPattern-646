@@ -1,4 +1,4 @@
-package FactoryMethod.sample01;
+package Builder.sample01;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -6,19 +6,15 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 
 public class XMLUtil {
-    /**
-     * 该方法用于从 XML 配置文件中提取具体类类名,并返回一个实例对象。
-     */
     public static Object getBean() {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = documentBuilderFactory.newDocumentBuilder();
             Document doc;
-            doc = builder.parse(new File("./src/FactoryMethod/sample01/config.xml"));
+            doc = builder.parse(new File("./src/Builder/sample01/config.xml"));
 
             NodeList nodeList = doc.getElementsByTagName("className");
             Node classNode = nodeList.item(0).getFirstChild();

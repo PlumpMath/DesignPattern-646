@@ -19,8 +19,9 @@ public class XMLUtil {
             NodeList nodeList = doc.getElementsByTagName("className");
             Node classNode = nodeList.item(0).getFirstChild();
             String className = classNode.getNodeValue();
+            String packageName = XMLUtil.class.getPackage().getName();
 
-            Class c = Class.forName("AbstractFactory.sample01." + className);
+            Class c = Class.forName(packageName + "." + className);
             Object obj = c.newInstance();
             return obj;
         } catch (Exception e) {
