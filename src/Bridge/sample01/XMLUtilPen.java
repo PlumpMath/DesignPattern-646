@@ -14,7 +14,7 @@ public class XMLUtilPen {
         try {
             DocumentBuilder builder = documentBuilderFactory.newDocumentBuilder();
             Document doc;
-            doc = builder.parse(new File("./src/Bridge/Proxy.sample01/configPen.xml"));
+            doc = builder.parse(new File("./src/Bridge/sample01/configPen.xml"));
 
             NodeList nodeList = doc.getElementsByTagName("className");
             Node classNode = null;

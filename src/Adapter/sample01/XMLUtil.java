@@ -14,7 +14,7 @@ public class XMLUtil {
         try {
             DocumentBuilder builder = documentBuilderFactory.newDocumentBuilder();
             Document doc;
-            doc = builder.parse(new File("./src/Adapter/Proxy.sample01/config.xml"));
+            doc = builder.parse(new File("./src/Adapter/sample01/config.xml"));
 
             NodeList nodeList = doc.getElementsByTagName("className");
             Node classNode = nodeList.item(0).getFirstChild();
