@@ -7,3 +7,5 @@ public class SmallPen extends Pen {
         this.color.bepaint(penType, name);
     }
 }
+
+
