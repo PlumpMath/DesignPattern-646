@@ -14,7 +14,7 @@ public class XMLUtilTV {
         try {
             DocumentBuilder builder = documentBuilderFactory.newDocumentBuilder();
             Document doc;
-            doc = builder.parse(new File("./src/SimpleFactory/Proxy.sample01/configTV.xml"));
+            doc = builder.parse(new File("./src/SimpleFactory/sample01/configTV.xml"));
             NodeList nodeList = doc.getElementsByTagName("brandName");
             Node classNode = nodeList.item(0).getFirstChild();
             String brandName = classNode.getNodeValue().trim();
