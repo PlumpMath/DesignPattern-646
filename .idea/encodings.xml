@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/Bridge/sample01/Black.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Prototype/createSimilarObjects/Main.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Prototype/sample01/Email.java" charset="GB2312" />
   </component>
